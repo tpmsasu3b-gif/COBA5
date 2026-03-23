@@ -718,17 +718,17 @@
             <form id="addForm" onsubmit="handleAddItem(event)">
                 <div class="form-group">
                     <label class="form-label">Nama Barang</label>
-                    <input type="text" class="form-input" id="itemName" placeholder="Contoh: Laptop ASUS TUF" required>
+                    <input type="text" class="form-input" id="itemName" placeholder="Contoh: Baju anti Acid" required>
                 </div>
                 
                 <div class="form-group">
                     <label class="form-label">Kategori</label>
                     <select class="form-select" id="itemCategory" required>
                         <option value="">Pilih Kategori</option>
-                        <option value="Elektronik">Elektronik</option>
-                        <option value="Perkakas">Perkakas</option>
-                        <option value="ATK">ATK</option>
-                        <option value="Furniture">Furniture</option>
+                        <option value="Onishi">Exhaust fan</option>
+                        <option value="Portable Blower">Exhaust fan</option>
+                        <option value="Submersibble pump">Pompa</option>
+                        <option value="Baju Anti Acid">Alat Pelindung Diri</option>
                         <option value="Lainnya">Lainnya</option>
                     </select>
                 </div>
@@ -752,7 +752,7 @@
 
                 <div class="form-group">
                     <label class="form-label">Lokasi Penyimpanan</label>
-                    <input type="text" class="form-input" id="itemLocation" placeholder="Contoh: Gudang A, Rak 1">
+                    <input type="text" class="form-input" id="itemLocation" placeholder="Contoh: Gudang kontainer,1300">
                 </div>
 
                 <button type="submit" class="btn btn-primary" id="submitBtn">
@@ -1180,8 +1180,8 @@
         function simulateScan() {
             showToast('Memindai QR Code...');
             setTimeout(() => {
-                document.getElementById('itemName').value = 'Scanner Bluetooth Zebra';
-                document.getElementById('itemCategory').value = 'Elektronik';
+                document.getElementById('itemName').value = 'Handy Talky';
+                document.getElementById('itemCategory').value = 'Alat Komunikasi';
                 document.getElementById('itemStock').value = '1';
                 showToast('QR Code terdeteksi! Form telah diisi otomatis');
             }, 1500);
