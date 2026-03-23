@@ -63,7 +63,7 @@
         /* Navigation */
         .nav-tabs {
             display: flex;
-            background: white;
+            background: gray;
             padding: 4px;
             margin: 16px;
             border-radius: 12px;
@@ -469,7 +469,7 @@
             position: absolute;
             width: 24px;
             height: 24px;
-            background: white;
+            background: blue;
             border-radius: 50%;
             top: 2px;
             left: 2px;
@@ -633,8 +633,8 @@
 
     <!-- Header -->
     <div class="header">
-        <h1>📦 Inventaris SASU3B</h1>
-        <p>Kelola stok barang dengan mudah</p>
+        <h1> 📝 Inventaris SASU3B</h1>
+        <p>sistem manajemen pengelolaan barang di Asam Sulfat & Utilitas IIIB</p>
     </div>
 
     <!-- Sync Status -->
@@ -1150,7 +1150,7 @@
             const id = prompt('170NYwiCWwAXBTgz4H0UvGnUUYLmIyr0kjxgoSiVc9CQ', spreadsheetId);
             if (id) {
                 spreadsheetId = id;
-                localStorage.setItem('spreadsheetId', id);
+                localStorage.setItem('170NYwiCWwAXBTgz4H0UvGnUUYLmIyr0kjxgoSiVc9CQ', id);
                 document.getElementById('sheetIdDisplay').textContent = id.substring(0, 20) + '...';
                 showToast('ID Spreadsheet tersimpan');
                 simulateSync();
