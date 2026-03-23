@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="id" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -633,7 +633,7 @@
 
     <!-- Header -->
     <div class="header">
-        <h1>📦 Inventaris</h1>
+        <h1>📦 Inventaris SASU3B</h1>
         <p>Kelola stok barang dengan mudah</p>
     </div>
 
@@ -882,7 +882,7 @@
         // Data Management
         let inventoryData = [];
         let currentTransaction = null;
-        let spreadsheetId = localStorage.getItem('spreadsheetId') || '';
+        let spreadsheetId = localStorage.getItem('170NYwiCWwAXBTgz4H0UvGnUUYLmIyr0kjxgoSiVc9CQ') || '';
 
         // Initialize
         document.addEventListener('DOMContentLoaded', () => {
@@ -903,11 +903,11 @@
             } else {
                 // Sample data for demo
                 inventoryData = [
-                    { id: 1, name: 'Laptop ASUS TUF', category: 'Elektronik', stock: 12, unit: 'Unit', location: 'Gudang A', lastUpdate: '2024-01-15' },
-                    { id: 2, name: 'Mouse Logitech MX', category: 'Elektronik', stock: 3, unit: 'Pcs', location: 'Gudang A', lastUpdate: '2024-01-14' },
-                    { id: 3, name: 'Kertas A4 80gsm', category: 'ATK', stock: 50, unit: 'Box', location: 'Gudang B', lastUpdate: '2024-01-13' },
-                    { id: 4, name: 'Meja Kantor', category: 'Furniture', stock: 8, unit: 'Unit', location: 'Gudang C', lastUpdate: '2024-01-12' },
-                    { id: 5, name: 'Bor Listrik Bosch', category: 'Perkakas', stock: 2, unit: 'Unit', location: 'Gudang D', lastUpdate: '2024-01-11' }
+                    { id: 1, name: 'Onishi', category: 'Exhaust fan', stock: 12, unit: 'Unit', location: 'Gudang kontainer-1300', lastUpdate: '2024-01-15' },
+                    { id: 2, name: 'Portable Blower', category: 'Exhaust fan', stock: 3, unit: 'EA', location: 'Gudang kontainer-1300', lastUpdate: '2024-01-14' },
+                    { id: 3, name: 'Submersibble pump', category: 'Pompa', stock: 2, unit: 'EA', location: 'Gudang Gedung STG17-5', lastUpdate: '2024-01-13' },
+                    { id: 4, name: 'Baju Anti Acid', category: 'Alat Pelindung Diri', stock: 4, unit: 'Stel', location: 'BARAK-1300', lastUpdate: '2024-01-12' },
+                    { id: 5, name: 'Handy Talky', category: 'Alat Komunikasi', stock: 6, unit: 'Unit', location: 'CCR SA-SU3B', lastUpdate: '2024-01-11' }
                 ];
                 saveData();
             }
@@ -1004,10 +1004,10 @@
 
         function getCategoryIcon(category) {
             const icons = {
-                'Elektronik': '💻',
-                'Perkakas': '🔧',
-                'ATK': '📝',
-                'Furniture': '🪑',
+                'Exhaust Fan': '💻',
+                'Pompa': '🔧',
+                'Alat Pelindung Diri': '📝',
+                'Alat Komunikasi': '🪑',
                 'Lainnya': '📦'
             };
             return icons[category] || '📦';
@@ -1147,7 +1147,7 @@
 
         // Settings Functions
         function configureSheet() {
-            const id = prompt('Masukkan ID Google Spreadsheet:', spreadsheetId);
+            const id = prompt('170NYwiCWwAXBTgz4H0UvGnUUYLmIyr0kjxgoSiVc9CQ', spreadsheetId);
             if (id) {
                 spreadsheetId = id;
                 localStorage.setItem('spreadsheetId', id);
@@ -1201,7 +1201,7 @@
         // Google Sheets Integration (Real Implementation Template)
         /*
         async function syncWithGoogleSheets() {
-            const SHEET_ID = localStorage.getItem('spreadsheetId');
+            const SHEET_ID = localStorage.getItem('170NYwiCWwAXBTgz4H0UvGnUUYLmIyr0kjxgoSiVc9CQ');
             const API_KEY = 'YOUR_API_KEY'; // Get from Google Cloud Console
             const RANGE = 'Sheet1!A1:F100';
             
