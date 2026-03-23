@@ -1,5 +1,5 @@
 /* ============================================
-   INVENTARIS MOBILE - PWA STYLES
+   INVENTARIS MOBILE SA-SU3B - COMPONENTS
    Version: 1.0.0
    ============================================ */
 
@@ -416,12 +416,12 @@ img {
 
 .btn--success {
   background: var(--success);
-  color: white;
+  color: green;
 }
 
 .btn--danger {
   background: var(--danger);
-  color: white;
+  color: gray;
 }
 
 .btn--secondary {
@@ -694,7 +694,7 @@ img {
 }
 
 .modal {
-  background: white;
+  background: Black;
   width: 100%;
   max-height: 90vh;
   border-radius: var(--radius-2xl) var(--radius-2xl) 0 0;
@@ -1045,6 +1045,6 @@ img {
   }
   
   body {
-    background: white;
+    background: Black;
   }
 }
